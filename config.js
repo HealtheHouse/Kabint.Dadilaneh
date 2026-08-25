@@ -1,6 +1,5 @@
 // تنظیم اتصال به دیتابیس آنلاین Supabase
-// این دو مقدار را از Project Settings > API در Supabase بردارید.
 window.APP_CONFIG = {
-  SUPABASE_URL: '',
-  SUPABASE_ANON_KEY: ''
+  SUPABASE_URL: 'https://cexcxzwicrknoxvofddl.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_Wn18z8ErFoRWV3DCwGnbTA_Tf88uo0N'
 };
