@@ -1,17 +1,8 @@
-راهنمای انتشار نرم افزار مدیریت مالی دادیلانه
-
-1) تمام فایل‌های این پوشه باید مستقیماً در ریشه Repository گیت‌هاب قرار بگیرند.
-2) index.html و config.js باید کنار هم و در ریشه Repository باشند.
-3) در GitHub: Settings > Pages > Deploy from a branch > main > /(root) را انتخاب کنید.
-4) در Supabase ابتدا supabase_schema.sql را در SQL Editor اجرا کنید.
-5) فایل config.js از قبل با Project URL و Publishable/Anon Key تنظیم شده است.
-6) هرگز Service Role/Secret Key را در GitHub قرار ندهید.
-
-ساختار صحیح:
-index.html
-config.js
-supabase_schema.sql
-seed.sql
-favicon.svg
-.nojekyll
-README_GITHUB_راه‌اندازی.txt
+نسخه آنلاین مدیریت مالی دادیلانه
+1) فایل‌های این پوشه را مستقیم در ریشه Repository گیت‌هاب آپلود کنید.
+2) GitHub Pages را روی main و / (root) فعال کنید.
+3) در Supabase بخش SQL Editor فایل supabase_schema.sql را یک بار اجرا کنید.
+4) کاربر را در Authentication > Users بسازید.
+5) وارد سایت شوید. اگر برای آن کاربر داده‌ای در app_data نباشد، اطلاعات اولیه داخل نرم‌افزار (استخراج‌شده از Excel) به‌صورت خودکار در Supabase ذخیره می‌شود.
+6) اطلاعات جدید نیز مستقیم در Supabase ذخیره می‌شود و بین رایانه‌ها مشترک است.
+نکته: کلید داخل config.js از نوع Publishable است؛ هرگز Service Role/Secret را در سایت قرار ندهید.
